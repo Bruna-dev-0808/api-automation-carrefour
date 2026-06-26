@@ -28,4 +28,4 @@ jobs:
       - name: Run API Tests
         run: |
           ls -R
-          newman run "coleções/api-automation-Carrefour.postman_collection.json" -e "ambientes/Carrefour QA.postman_environment.json"
+          newman run "coleções/api-automation-Carrefour.postman_collection.json" -e "environments/Carrefour QA.postman_environment.json"
