@@ -1,36 +1,4 @@
-[16:47, 26/06/2026] Bruna Ferraz: name: API Tests
-
-on:
-  push:
-    branches:
-      - main
-
-  pull_request:
-    branches:
-      - main
-
-jobs:
-  newman:
-    runs-on: ubuntu-latest
-
-    steps:
-      - name: Checkout repository
-        uses: actions/checkout@v4
-
-      - name: Setup Node.js
-        uses: actions/setup-node@v4
-        with:
-          node-version: 20
-
-      - name: Install Newman
-        run: npm install -g newman
-
-      - name: Run API Tests
-  run: |
-    ls -R
-    newman run "coleções/api-automation-Carrefour.postman_collection.json" \
-    -e "ambientes/Carrefour QA.postman_environment.json"
-[16:48, 26/06/2026] Bruna Ferraz: name: API Tests
+name: API Tests
 
 on:
   push:
