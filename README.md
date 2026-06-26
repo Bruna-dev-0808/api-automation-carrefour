@@ -31,10 +31,11 @@ Os testes são executados automaticamente pelo GitHub Actions a cada push na bra
 
 ### Execução da Collection
 
-![Collection](evidence/postman-run.png)
+![Postman](evidence/postman-success.png)
 
 ### GitHub Actions
 
 ![GitHub Actions](evidence/github-actions-success.png)
+
 
 
