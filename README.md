@@ -1,85 +1,38 @@
-# API Automation Carrefour
+# Automação de API Carrefour
 
-## 📋 Sobre o projeto
+## Objetivo
+Projeto de automação de testes de API utilizando Postman, Newman e GitHub Actions.
 
-Este projeto foi desenvolvido como parte de um desafio técnico de Automação de Testes de API.
-
-O objetivo foi automatizar o fluxo completo de CRUD (Create, Read, Update e Delete) utilizando o Postman para validação de uma API REST.
-
----
-
-## 🚀 Tecnologias utilizadas
-
+## Tecnologias
 - Postman
-- JavaScript
-- API ServeRest
-- JSON
+- Newman
+- GitHub Actions
+- GitHub
 
----
+## Estrutura do projeto
 
-## 📂 Estrutura do projeto
+.github/workflows/
+collections/
+environments/
+evidence/
+README.md
 
+## Como executar
 
-api-automation-carrefour
-│
-├── collections
-│   └── api-automation-Carrefour.json
-│
-├── environments
-│   └── Carrefour QA.json
-│
-└── README.md
+1. Importe a Collection no Postman.
+2. Importe o Environment.
+3. Execute a Collection Runner.
 
+## Integração Contínua (CI)
 
----
+Os testes são executados automaticamente pelo GitHub Actions a cada push na branch main.
 
-## ✔️ Fluxo automatizado
+## Evidências
 
-A Collection executa automaticamente:
+### Execução da Collection
 
-1. Login
-2. Criar Usuário
-3. Listar Usuários
-4. Buscar Usuário por ID
-5. Atualizar Usuário
-6. Excluir Usuário
+![Collection](evidence/postman-run.png)
 
----
+### GitHub Actions
 
-## ✔️ Validações implementadas
-
-- Status Code
-- Response Body
-- Autenticação JWT
-- Atualização de variáveis de ambiente
-- CRUD completo
-- Validação de mensagens da API
-
----
-
-## ▶️ Como executar
-
-1. Importar a Collection no Postman.
-2. Importar o Environment "Carrefour QA".
-3. Selecionar o Environment.
-4. Executar a Collection Runner.
-
----
-
-## ✅ Resultado esperado
-
-Todos os testes devem ser executados com sucesso.
-
-Resultado esperado:
-
-Passed: 6
-
-Failed: 0
-
-Errors: 0
-
----
-
-## 👩‍💻 Desenvolvido por
-
-Bruna Ferraz
+![GitHub Actions](evidence/github-actions-success.png)
