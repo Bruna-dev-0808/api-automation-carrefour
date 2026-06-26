@@ -3,23 +3,21 @@ name: API Tests
 on:
   push:
     branches:
-      - principal
+      - main
 
   pull_request:
     branches:
-      - principal
+      - main
 
 jobs:
   newman:
-
     runs-on: ubuntu-latest
 
     steps:
-
       - name: Checkout repository
         uses: actions/checkout@v4
 
-      - name: Install Node
+      - name: Setup Node.js
         uses: actions/setup-node@v4
         with:
           node-version: 20
@@ -29,5 +27,5 @@ jobs:
 
       - name: Run API Tests
         run: |
-          newman run coleções/api-automation-Carrefour.postman_collection.json \
-          -e ambientes/Carrefour\ QA.postman_environment.json
+          newman run "coleções/api-automation-Carrefour.postman_collection.json" \
+          -e "ambientes/Carrefour QA.postman_environment.json"
