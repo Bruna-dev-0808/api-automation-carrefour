@@ -26,6 +26,7 @@ jobs:
         run: npm install -g newman
 
       - name: Run API Tests
-        run: |
-          newman run "coleções/api-automation-Carrefour.postman_collection.json" \
-          -e "ambientes/Carrefour QA.postman_environment.json"
+  run: |
+    ls -R
+    newman run "coleções/api-automation-Carrefour.postman_collection.json" \
+    -e "ambientes/Carrefour QA.postman_environment.json"
